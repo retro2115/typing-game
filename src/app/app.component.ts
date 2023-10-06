@@ -9,6 +9,9 @@ import { faker } from '@faker-js/faker';
 export class AppComponent {
   title = 'typing-game';
 
-  randomText = faker.lorem.words();
-  
+  randomText = faker.lorem.words(5);
+  onInput(value: string) {
+	console.log(value)
+  }
+
 }
