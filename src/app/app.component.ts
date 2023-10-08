@@ -16,4 +16,15 @@ export class AppComponent {
 	this.enteredText = value;
   }
 
+  /*
+  solved = false;
+  randomText = faker.lorem.words(5);
+  onInput(value: string) {
+	if (value === this.randomText) {
+		this.solved = true; ==> *ngIf solved === true
+	}
+  }
+  
+  */
+
 }
