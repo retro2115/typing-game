@@ -16,6 +16,13 @@ export class AppComponent {
 	this.enteredText = value;
   }
 
+  compare(randomLetter: string, enteredLetter: string) {
+		if (!randomLetter) {
+			return 'pending';
+		}
+		return randomLetter === enteredLetter ? 'correct' : 'incorrect';
+  }
+
   /*
   solved = false;
   randomText = faker.lorem.words(5);
