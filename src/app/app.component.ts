@@ -17,7 +17,7 @@ export class AppComponent {
   }
 
   compare(randomLetter: string, enteredLetter: string) {
-		if (!randomLetter) {
+		if (!enteredLetter) {
 			return 'pending';
 		}
 		return randomLetter === enteredLetter ? 'correct' : 'incorrect';
